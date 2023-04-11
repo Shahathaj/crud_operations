@@ -12,3 +12,8 @@ def display_webpages(request):
     LOW=Webpage.objects.all()
     d={'webpages':LOW}
     return render(request,'display_webpages.html',d)
+
+def display_access(request):
+    LOA=AccessRecord.objects.all()
+    d={'access':LOA}
+    return render(request,'display_access.html',d)
